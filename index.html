@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lethabo Huma</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+      <div class="container">
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links centered, button far right -->
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto gap-4 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv">CV</a>
+            </li>
+          </ul>
+
+          <!-- Right-aligned button -->
+          <a
+            class="btn btn-brand ms-auto mt-2 mt-lg-0"
+            href="mailto:lethabohuma7@gmail.com"
+          >
+            <i class="bi bi-send"></i> Get in touch
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+      <div class="container container-wide fs-4">
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-lg-10 text-center">
+            <div
+              class="d-flex align-items-center justify-content-center gap-3 mb-3"
+            >
+              <img
+                src="/images/pict240514_1517100000 2.JPG"
+                alt="avatar"
+                class="avatar"
+              />
+              <div>
+                <h2 class="mb-1">Hi, I’m Lethabo Huma!</h2>
+                <p class="mb-1 fs-5 text-muted">
+                  Full Stack Developer & Designer
+                </p>
+                <p class="mb-0 text-muted">
+                  Blending code and design to build useful tools.
+                </p>
+              </div>
+            </div>
+            <div class="mb-3">
+              <a href="mailto:lethabohuma7@gmail.com" class="me-3"
+                ><i class="bi bi-envelope fs-4"></i
+              ></a>
+              <a href="https://github.com/LethaboHuma" class="me-3"><i class="bi bi-github fs-4"></i></a>
+              <a href="https://za.linkedin.com/in/lethabo-huma-8182aa1b5"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Blender</span>
+              <span class="tag">AI Research</span>
+            </div>
+            <div class="d-flex justify-content-center gap-2 mt-4">
+              <a href="#about" class="btn btn-brand btn-lg"
+                ><i class="bi bi-person"></i> About me</a
+              >
+              <a
+                id="download-cv"
+                href="#"
+                class="btn btn-outline-dark btn-lg"
+                download
+              >
+                <i class="bi bi-download"></i> Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container container-wide">
+        <div class="d-flex justify-content-between align-items-end">
+          <div>
+            <h2 class="h4 mb-1">Featured Projects</h2>
+            <p class="text-muted">A few things I built recently:</p>
+          </div>
+         
+        </div>
+
+        <div class="row g-5 projects-list">
+          <!-- GKCC Admin System -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 project-card">
+              <div class="row g-0 h-100">
+                <div class="col-12 col-lg-5 media-col">
+                  <img
+                    src="images/gkcc-admin-system.jpg"
+                    alt="GKCC Admin System"
+                    class="img-fluid h-100 w-100 rounded-start"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <h3 class="h5 mb-0">GKCC Admin System</h3>
+                      <span class="badge">Full‑Stack</span>
+                    </div>
+                    <p class="text-muted">
+                      Volunteer-focused admin system for Grace Kingdom Community
+                      Centre: media requests, weekly reports, attendance, and
+                      equipment status.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                      <span class="tag">React</span
+                      ><span class="tag">Express</span>
+                      <span class="tag">Tailwind</span>
+                      <span class="tag">Prisma</span
+                      ><span class="tag">PostgreSQL</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a
+                        class="btn btn-lg btn-brand"
+                        href="https://gkcc-admin-system-frontend.onrender.com/dashboard"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i class="bi bi-box-arrow-up-right"></i> Live
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather App -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 project-card">
+              <div class="row g-0 h-100">
+                <div class="col-12 col-lg-5 media-col">
+                  <img
+                    src="images/weatherapp.jpg"
+                    alt="Weather App"
+                    class="img-fluid h-100 w-100 rounded-start"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <h3 class="h5 mb-0">Forecast Fusion App</h3>
+                      <span class="badge">Frontend</span>
+                    </div>
+                    <p class="text-muted">
+                      Weather app that fetches current conditions using a public API.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                      <span class="tag">HTML</span><span class="tag">CSS</span>
+                      <span class="tag">JS</span><span class="tag">API</span
+                      ><span class="tag">Figma</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a
+                        class="btn btn-lg btn-brand"
+                        href="https://forecast-fusion-app.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i class="bi bi-box-arrow-up-right"></i> Live
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Page App (CRUD) -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 project-card">
+              <div class="row g-0 h-100">
+                <div class="col-12 col-lg-5 media-col">
+                  <img
+                    src="images/contact-book-app.jpg"
+                    alt="Contact CRUD App"
+                    class="img-fluid h-100 w-100 rounded-start"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <h3 class="h5 mb-0">Contact Book App</h3>
+                      <span class="badge">Full-Stack</span>
+                    </div>
+                    <p class="text-muted">
+                      CRUD Contact application with validation
+                      and responsive layout.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                      <span class="tag">HTML</span
+                      ><span class="tag">Bootstrap</span>
+                      <span class="tag">JS</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a
+                        class="btn btn-lg btn-brand"
+                        href="https://contactbookapp4.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i class="bi bi-box-arrow-up-right"></i> Live
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GigFin (WIP) -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 project-card border-dashed">
+              <div class="row g-0 h-100">
+                <div class="col-12 col-lg-5 media-col">
+                  <img
+                    src="images/gigfin.png"
+                    alt="GigFin (in progress)"
+                    class="img-fluid h-100 w-100 rounded-start"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <h3 class="h5 mb-0">GigFin (in progress)</h3>
+                      <span class="badge">Figma</span>
+                    </div>
+                    <p class="text-muted">
+                      Mobile app for gig workers to plan income, track expenses,
+                      and showcase services. Currently building screens and
+                      flows.
+                    </p>
+                   
+                    <div class="d-flex gap-2">
+                      <a
+                        class="btn btn-lg btn-brand"
+                        href="gigfin.html"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i class="bi bi-box-arrow-up-right"></i> View
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section bg-white" id="about">
+      <div class="container container-wide">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h4 mb-3">About</h2>
+            <p>
+              I’m a full-stack developer and designer focused on building
+              functional, human-centered tools that solve real-world problems.
+              With a background in design and programming, I balance technical
+              skill with creativity, take initiative and thrive in
+              collaborative, user-focused environments.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Blender</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Canva</span>
+              <span class="tag">AI Research</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 bg-light border">
+              <h3 class="h6">Quick CV - Experience</h3>
+              <div class="small text-muted">
+                A snapshot of roles and highlights.
+              </div>
+              <hr />
+              <ul class="list-unstyled">
+                <li class="mb-3 bi bi-award me-2">
+                  <strong>Developer & Designer</strong> • Projects: GKCC Admin
+                  System, GigFin (In progress), Utility apps
+                </li>
+                <li class="mb-3 bi bi-mortarboard me-2">
+                  <strong>Ethical AI Researcher</strong> • Contributions to
+                  youth perspectives for culture and education (UNESCO)
+                </li>
+                <li class="mb-0 bi bi-people me-2">
+                  <strong>Workshop Lead</strong> • Lenovo collaboration - Led a
+                  two-day workshop to teach students basic 3D design in blender
+                  and AI tools
+                </li>
+                <li class="mb-0 bi bi-cpu me-2">
+                  <strong>IT & Media Volunteer</strong> • Support sunday
+                  services with live streaming, sound and video production while
+                  training and assisting media team members.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container container-wide">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Education</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2 d-flex justify-content-between">
+                <span
+                  ><strong>Desktop Publishing and Design Certificate</strong> -
+                  Vega School of Design</span
+                >
+                <span class="text-muted">2019</span>
+              </li>
+              <li class="mb-2 d-flex justify-content-between">
+                <span
+                  ><strong>Web Development Certificate</strong> - SheCodes
+                  Academy</span
+                >
+                <span class="text-muted">2024</span>
+              </li>
+              <li class="mb-2 d-flex justify-content-between">
+                <span
+                  ><strong>Full‑Stack Development Certificate</strong> - FNB App
+                  Academy</span
+                >
+                <span class="text-muted">2025</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section bg-white" id="contact">
+      <div class="container container-wide">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h2 class="h4 mb-2">Contact</h2>
+            <p class="text-muted">
+              For collaborations, commissions, or opportunities, reach out. I’m
+              open to roles in software development and creative tech.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                <a href="mailto:you@example.com">lethabohuma7@gmail.com</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-linkedin me-2"></i>
+                <a href="https://za.linkedin.com/in/lethabo-huma-8182aa1b5" target="_blank" rel="noreferrer">LinkedIn</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-github me-2"></i>
+                <a href="https://github.com/LethaboHuma" target="_blank" rel="noreferrer">GitHub</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="h6">Send a message</h3>
+                <form
+                  class="row g-3"
+                  onsubmit="event.preventDefault(); this.reset(); alert('Thanks, I will get back to you!');"
+                >
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-brand">
+                      <i class="bi bi-send"></i> Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white">
+      <div
+        class="container container-wide d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <div class="small text-muted">
+          © <span id="year"></span> Lethabo. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a class="link-quiet" href="#home">Back to top</a>
+          <a class="link-quiet" href="#about">About</a>
+          <a class="link-quiet" href="#projects">Projects</a>
+        
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // set year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // close navbar on click (mobile)
+      document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const nav = document.getElementById("nav");
+          if (nav.classList.contains("show"))
+            new bootstrap.Collapse(nav).hide();
+        });
+      });
+    </script>
+  </body>
+</html>

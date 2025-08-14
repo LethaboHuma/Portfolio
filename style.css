@@ -1,0 +1,171 @@
+/* Styles moved from index.html */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.project {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+:root{
+        --brand: #0ea5e9; /* cyan-ish */
+        --brand-2: #facc15; /* warm yellow */
+        --ink: #0f172a; /* slate-900 */
+        --muted: #475569; /* slate-600 */
+        --bg: #f8fafc; /* slate-50 */
+      }
+      html { scroll-behavior: smooth; }
+
+   
+      body{ background: var(--bg); color: var(--ink); font-size: 20px; line-height: 1.6; }
+
+     
+      .container-wide{
+        width: 100%;
+        max-width: min(98.5vw, 1800px); 
+        padding-left: 8px;               
+        padding-right: 8px;
+      }
+
+      .navbar-brand{ font-weight: 700; letter-spacing: .2px; }
+     
+      .btn.btn-brand{ background-color: var(--brand) !important; border-color: var(--brand) !important; color: #fff !important; }
+      .btn.btn-brand:hover, .btn.btn-brand:focus, .btn.btn-brand:active{ background-color: #0284c7 !important; border-color: #0284c7 !important; color: #fff !important; }
+      .text-brand{ color: var(--brand); }
+
+     
+      .section{ padding: 48px 0; }
+
+      
+      .hero{
+        margin-top: 64px;            
+        padding: 48px 0 24px;
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(14,165,233,.08), rgba(14,165,233,0));
+      }
+
+      .hero{ font-size: clamp(1.05rem, 0.7rem + 0.9vw, 1.4rem); }
+      .hero h2{
+        font-size: clamp(2.4rem, 1.6rem + 2.6vw, 3.2rem);
+        font-weight: 800;
+        letter-spacing: .2px;
+        margin-bottom: .25rem;
+      }
+      .hero .fs-5,
+      .hero p{ font-size: clamp(1.1rem, 0.9rem + 0.7vw, 1.45rem) !important; }
+
+      .tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #979797; 
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  background-color: transparent; 
+}
+
+      .hero .gap-3{ gap: 0.75rem !important; }
+      .hero .mb-3{ margin-bottom: 0.75rem !important; }
+      .hero .mb-4{ margin-bottom: 1rem !important; }
+
+      .avatar{
+        width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid white; box-shadow: 0 10px 30px rgba(2,132,199,.25);
+      }
+
+      .card{ border: 0; box-shadow: 0 6px 24px rgba(15,23,42,.06); }
+      .card .badge{ background: rgba(14,165,233,.12); color: #0369a1; }
+
+      footer{ padding: 40px 0; border-top: 1px solid #e2e8f0; }
+      .link-quiet{ color: var(--muted); text-decoration: none; }
+      .link-quiet:hover{ color: var(--ink); }
+      .sticky-offset{ top: 60px; }
+      .bi{ vertical-align: -.1em; }
+
+      a:focus, button:focus, input:focus, textarea:focus{ outline: 3px solid rgba(14,165,233,.35) !important; outline-offset: 2px; }
+
+      .post-item{ border-left: 3px solid rgba(14,165,233,.35); padding-left: 1rem; }
+
+      @media (max-width: 991px){
+        .hero{ margin-top: 56px; padding-top: 88px; } /* a touch more space under navbar on mobile */
+        .container-wide{ max-width: 100%; padding-left: 8px; padding-right: 8px; }
+      }
+   /* ---------- Bigger, single-column Featured Projects ---------- */
+.projects-list .project-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.projects-list .project-card .card-body {
+  padding: 2rem 2.25rem;
+}
+
+.projects-list .media-col {
+  min-height: 220px;
+}
+
+.projects-list .media-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* small top margin so the first card isn't glued to the header text */
+#projects .projects-list {
+  margin-top: 0.5rem;
+}
+
+/* Larger layout on desktop */
+@media (min-width: 992px) {
+  .projects-list .media-col {
+    min-height: 320px;
+  }
+  .projects-list .project-card .card-body {
+    padding: 2.25rem 2.75rem;
+  }
+}
